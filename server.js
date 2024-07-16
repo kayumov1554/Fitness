@@ -69,8 +69,6 @@ app.post("/login", (req, res) => {
     );
     if (user) {
       res.send("Muvaffaqiyatli kirdingiz.");
-      document.getElementById("register").style.display = "none";
-      document.getElementById("registerr").style.display = "none";
     } else {
       res.status(400).send("Noto'g'ri username yoki parol.");
     }
