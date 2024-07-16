@@ -65,7 +65,6 @@ async function register() {
       "Username va parolni kiriting.";
     return;
   }
-
   showLoader();
 
   const response = await fetch("/register", {
