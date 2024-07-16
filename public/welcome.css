@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Vast+Shadow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+nav .container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 13px 0;
+}
+
+nav .container .left h1 {
+  padding: 0 200px;
+}
+
+nav .container .right h1 {
+  padding: 0 200px;
+}
+
+.section1 .container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.489),
+      rgba(0, 0, 0, 0.489),
+      rgba(0, 0, 0, 0.489)
+    ),
+    url("https://img.freepik.com/free-photo/people-working-out-indoors-together-with-dumbbells_23-2149175410.jpg?t=st=1718713944~exp=1718717544~hmac=d0af3acb375f81c4f8baa3ba4438816970bb8b39df9b0abf772146fbf282ee92&w=1380");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section1 .container h1 {
+  font-size: 55px !important;
+  color: white;
+  animation-delay: 0.5s;
+}
+.section1 .container p {
+  font-size: 19px !important;
+  width: 500px !important;
+  padding: 30px 0;
+  color: white;
+}
+
+.section1 .container .freepik {
+  padding: 20px 0;
+  color: white;
+  animation-delay: 0.7s;
+}
+
+.section1 .container .freepik a {
+  color: white;
+}
+
+.section1 .container .freepik a:hover {
+  text-decoration: none;
+}
+
+.section1 .container .classes {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px solid yellow;
+  padding: 13px 15px;
+  animation-delay: 0.8s;
+}
+
+.section1 .container .classes:hover {
+  background: yellow;
+  color: black;
+}
+
+.section2 .container {
+  display: flex;
+  width: 100%;
+  background: black;
+  flex-direction: column;
+}
+
+.section2 .container h1 {
+  font-size: 55px;
+  padding: 30px 0;
+  color: white;
+  text-align: center;
+}
+
+.section2 .container .cards {
+  display: flex;
+  width: 1400px !important;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.section2 .container .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  background: white;
+}
+
+.section2 .container .cards .card h1 {
+  font-size: 35px;
+  width: 100%;
+  background: rgb(243, 178, 15);
+  color: black;
+  animation-delay: 0.5s;
+}
+
+.section2 .container .cards .card img {
+  width: 100%;
+}
+.section2 .container .cards .card p {
+  color: black;
+  font-size: 19px;
+  width: 400px;
+  text-align: center;
+  padding: 30px 5px;
+}
+.section2 .container .cards .card a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgb(243, 178, 15);
+  padding-bottom: 5px;
+}
+.section2 .container .cards .card a:hover {
+  color: rgb(243, 178, 15);
+  border-bottom: 2px solid black;
+}
+
+.section3 .container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.section3 .container h1 {
+  font-size: 55px;
+  padding: 30px 0;
+  text-align: center;
+}
+.section3 .container .cards {
+  display: flex;
+  width: 1400px !important;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 40px 0;
+  gap: 40px;
+  justify-content: center;
+}
+.section3 .container .cards .card {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  animation-delay: 0.7s;
+}
+
+.section3 .container .cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section3 .container .cards .card .abouts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.366);
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.section3 .container .cards .card .abouts h1 {
+  font-size: 25px;
+  text-align: start;
+  color: white;
+  animation-delay: 0.7s;
+}
+
+.section3 .container .cards .card .abouts p {
+  color: white;
+  font-size: 19px;
+}
+
+.section4 .container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.41),
+      rgba(0, 0, 0, 0.41),
+      rgba(0, 0, 0, 0.41)
+    ),
+    url("https://img.freepik.com/free-photo/shirtless-muscular-athletic-male-holds-burning-barbell-grey-background_613910-15740.jpg?t=st=1718721169~exp=1718724769~hmac=f50002f150b33fbb0ec66c62487b551484e01fccdc55c3ee38e830dab3144110&w=826");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section4 .container svg {
+  fill: white;
+}
+
+.section4 .container h1 {
+  color: white;
+  font-size: 44px;
+  padding: 25px 0;
+}
+
+.section4 .container p {
+  color: white;
+  font-size: 24px;
+}
+.section4 .container a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.section5 .container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.section5 .container {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background: rgb(224, 171, 26);
+}
+
+.section5 .container form {
+  width: 50%;
+  height: 500px;
+  background: white;
+  padding: 50px;
+}
+
+.section5 .container form h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.section5 .container form .inputs {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.section5 .container form .inputs input {
+  width: 400px;
+  padding: 15px 0;
+  outline: none;
+  font-size: 19px;
+}
+
+.section5 .container form .inputs input::placeholder {
+  font-size: 19px;
+  padding: 0 10px;
+}
+
+.section5 .container form .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section5 .container form .buttons textarea {
+  width: 88%;
+  height: 150px;
+  padding: 20px 0;
+  outline: none;
+  font-size: 19px;
+}
+
+.section5 .container form .buttons button {
+  width: 88%;
+  padding: 10px 0;
+  margin: 10px 0;
+  color: white;
+  background: black;
+  border: 2px solid black;
+  font-size: 25px;
+}
+

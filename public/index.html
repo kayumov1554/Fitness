@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="mediaindex.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wow animate__animated animate__fadeIn" id="main">
+        <h1 class="wow animate__animated animate__fadeInUp">
+          Welcome To Boys Fitness Club
+        </h1>
+        <button
+          onclick="showLoginForm()"
+          class="wow animate__animated animate__fadeInLeft"
+        >
+          Login
+        </button>
+        <button
+          onclick="showRegisterForm()"
+          class="wow animate__animated animate__fadeInLeft"
+        >
+          register
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="loginForm"
+      class="form-container wow animate__animated animate__fadeIn"
+    >
+      <h2 class="wow animate__animated animate__fadeInUp">Login</h2>
+      <input
+        type="text"
+        id="loginUsername"
+        class="inputField"
+        placeholder="Username"
+      />
+      <input
+        type="password"
+        id="loginPassword"
+        class="inputField"
+        placeholder="Parol"
+      />
+      <button
+        onclick="login()"
+        class="formButton wow animate__animated animate__fadeInLeft"
+      >
+        Kirish
+      </button>
+      <p id="loginMessage"></p>
+      <span
+        >Don't have an account?
+        <div id="register" onclick="showRegisterForm()">register now</div></span
+      >
+    </div>
+
+    <div
+      id="registerForm"
+      class="form-container wow animate__animated animate__fadeIn"
+    >
+      <h2 class="wow animate__animated animate__fadeInUp">Ro'yxatdan o'tish</h2>
+      <input
+        type="text"
+        id="registerUsername"
+        class="inputField"
+        placeholder="Username"
+      />
+      <input
+        type="password"
+        id="registerPassword"
+        class="inputField"
+        placeholder="Parol"
+      />
+      <button
+        onclick="register()"
+        class="formButton wow animate__animated animate__fadeInLeft"
+      >
+        Ro'yxatdan o'tish
+      </button>
+      <p id="registerMessage"></p>
+      <span
+        >Have an account?
+        <div id="register" onclick="showLoginForm()">Login now</div></span
+      >
+    </div>
+
+    <div class="loader" id="loader"></div>
+    <!-- Loader -->
+
+    <script src="script.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
