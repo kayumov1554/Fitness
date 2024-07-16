@@ -2,18 +2,24 @@ function showMain() {
   document.getElementById("main").style.display = "block";
   document.getElementById("loginForm").style.display = "none";
   document.getElementById("registerForm").style.display = "none";
+  document.getElementById("register").style.display = "block";
+  document.getElementById("registerr").style.display = "none";
 }
 
 function showLoginForm() {
   document.getElementById("main").style.display = "none";
   document.getElementById("loginForm").style.display = "block";
   document.getElementById("registerForm").style.display = "none";
+  document.getElementById("register").style.display = "block";
+  document.getElementById("registerr").style.display = "none";
 }
 
 function showRegisterForm() {
   document.getElementById("main").style.display = "none";
   document.getElementById("registerForm").style.display = "block";
   document.getElementById("loginForm").style.display = "none";
+  document.getElementById("register").style.display = "block";
+  document.getElementById("registerr").style.display = "none";
 }
 
 function showLoader() {
@@ -31,6 +37,8 @@ async function login() {
   if (!username || !password) {
     document.getElementById("loginMessage").innerText =
       "Username va parolni kiriting.";
+    document.getElementById("register").style.display = "block";
+    document.getElementById("registerr").style.display = "block";
     return;
   }
 
